@@ -25,3 +25,7 @@ console.log(myArrow(8));
 const functionFactory = () => () => console.log('This is wierd');
 const a = functionFactory();
 a();
+const anotherFunction = functionFactory;
+anotherFunction()();
+
+
